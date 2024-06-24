@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Rangkaian Listrik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .section h1, .section h2 {
+            margin: 0;
+        }
+        .hero {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .content {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        .quiz {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 650px;
+            margin-bottom: 100px;
+            border-radius: 40px;
+        }
+        .quiz form div {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .quiz label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 95%;
+            background: rgba(55, 55, 55, 0.9);
+            color: #fff;
+            text-align: left;
+            padding: 20px;
+            margin-top: 20px;
+            z-index: 1000;
+            border-radius: 20px;
+            margin-left: 20px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .pdf {
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+
+        .text-1 {
+            font-size: 60px;
+        }
+
+        .text-2 {
+            font-size: 20px;
+        }
+
+        .text-3 {
+            font-size: 40px;
+        }
+
+        .materi-1 {
+            margin-top: 80px;
+        }
+
+        .button {
+            width: 100px;
+            height: 50px;
+
+            background-color: rgb(149, 218, 255);
+            border-radius: 30px;
+            border: 1px none;
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#landing">Home</a>
+        <a href="#materi">Materi</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <!-- Landing Page -->
+    <div class="section hero" id="landing">
+        <h1 class="text-1">Ayo Belajar dan Mengenal Rangkaian Listrik</h1>
+        <p class="text-2" >Scroll down untuk memulai pembelajaran</p>
+    </div>
+
+    <!-- Materi -->
+    <div class="section content, materi-1" id="materi">
+        <h2 class="text-3" >Materi Rangkaian Listrik</h2>
+        <p>Berikut adalah materi tentang rangkaian listrik pelajarilah dengan baik</p>
+        <embed class="pdf" src="doc.pdf" type="application/pdf" width="80%" height="80%" />
+    </div>
+
+    <!-- Quiz -->
+    <div class="section" id="quiz">
+        <div class="quiz">
+            <h2>Quiz Rangkaian Listrik</h2>
+            <form id="quizForm">
+                <div>
+                    <label>Apa yang dimaksud dengan arus listrik?</label>
+                    <input type="radio" name="q1" value="a"> a. Aliran muatan listrik<br>
+                    <input type="radio" name="q1" value="b"> b. Aliran energi panas<br>
+                    <input type="radio" name="q1" value="c"> c. Aliran energi kinetik<br>
+                    <input type="radio" name="q1" value="d"> d. Aliran cahaya<br>
+                </div>
+                <div>
+                    <label>Siapa ilmuwan yang menjadi asal nama satuan kuat arus listrik (ampere)?</label>
+                    <input type="radio" name="q2" value="a"> a. Isaac Newton<br>
+                    <input type="radio" name="q2" value="b"> b. James Watt<br>
+                    <input type="radio" name="q2" value="c"> c. Alessandro Volta<br>
+                    <input type="radio" name="q2" value="d"> d. Andre Marie Ampere<br>
+                </div>
+                <div>
+                    <label>Alat yang digunakan untuk mengukur besar arus listrik adalah:</label>
+                    <input type="radio" name="q3" value="a"> a. Voltmeter<br>
+                    <input type="radio" name="q3" value="b"> b. Barometer<br>
+                    <input type="radio" name="q3" value="c"> c. Amperemeter<br>
+                    <input type="radio" name="q3" value="d"> d. Termometer<br>
+                </div>
+                <div>
+                    <label>Beda potensial antara dua titik dalam suatu rangkaian listrik disebut:</label>
+                    <input type="radio" name="q4" value="a"> a. Resistansi<br>
+                    <input type="radio" name="q4" value="b"> b. Arus listrik<br>
+                    <input type="radio" name="q4" value="c"> c. Tegangan listrik<br>
+                    <input type="radio" name="q4" value="d"> d. Kapasitansi<br>
+                </div>
+                <div>
+                    <label>Apa satuan dari tegangan listrik?</label>
+                    <input type="radio" name="q5" value="a"> a. Ampere<br>
+                    <input type="radio" name="q5" value="b"> b. Ohm<br>
+                    <input type="radio" name="q5" value="c"> c. Volt<br>
+                    <input type="radio" name="q5" value="d"> d. Watt<br>
+                </div>
+                <div>
+                    <label>Jika dua lampu disusun secara seri dalam suatu rangkaian, maka:</label>
+                    <input type="radio" name="q6" value="a"> a. Arus yang mengalir pada tiap hambatan adalah berbeda<br>
+                    <input type="radio" name="q6" value="b"> b. Jika satu lampu mati, lampu lainnya tetap menyala<br>
+                    <input type="radio" name="q6" value="c"> c. Arus yang mengalir pada tiap hambatan adalah sama<br>
+                    <input type="radio" name="q6" value="d"> d. Beda potensial pada tiap hambatan adalah sama<br>
+                </div>
+                <div>
+                    <label>Jika beberapa resistor disusun secara paralel, maka:</label>
+                    <input type="radio" name="q7" value="a"> a. Kuat arus yang masuk tidak sama dengan kuat arus yang keluar<br>
+                    <input type="radio" name="q7" value="b"> b. Kuat arus yang masuk sama dengan kuat arus yang keluar<br>
+                    <input type="radio" name="q7" value="c"> c. Beda potensial pada tiap resistor berbeda<br>
+                    <input type="radio" name="q7" value="d"> d. Hambatan total sama dengan jumlah hambatan masing-masing resistor<br>
+                </div>
+                <div>
+                    <label>Beda potensial listrik diukur dengan alat yang disebut:</label>
+                    <input type="radio" name="q8" value="a"> a. Amperemeter<br>
+                    <input type="radio" name="q8" value="b"> b. Voltmeter<br>
+                    <input type="radio" name="q8" value="c"> c. Termometer<br>
+                    <input type="radio" name="q8" value="d"> d. Barometer<br>
+                </div>
+                <div>
+                    <label>Satuan dari resistansi atau hambatan adalah:</label>
+                    <input type="radio" name="q9" value="a"> a. Volt<br>
+                    <input type="radio" name="q9" value="b"> b. Ohm<br>
+                    <input type="radio" name="q9" value="c"> c. Ampere<br>
+                    <input type="radio" name="q9" value="d"> d. Watt<br>
+                </div>
+                <div>
+                    <label>Hubungan antara satuan kalori dan satuan joule adalah:</label>
+                    <input type="radio" name="q10" value="a"> a. 1 kalori = 0.4184 joule<br>
+                    <input type="radio" name="q10" value="b"> b. 1 kalori = 4.184 joule<br>
+                    <input type="radio" name="q10" value="c"> c. 1 joule = 4.184 kalori<br>
+                    <input type="radio" name="q10" value="d"> d. 1 joule = 0.4184 kalori<br>
+                </div>
+                <div style="text-align: center;">
+                    <button class="button" type="button" onclick="checkQuiz()">Submit</button>
+                </div>
+            </form>
+            <div id="result" style="text-align: center; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <script>
+        function checkQuiz() {
+            const answers = {
+                q1: 'a',
+                q2: 'd',
+                q3: 'c',
+                q4: 'c',
+                q5: 'c',
+                q6: 'c',
+                q7: 'b',
+                q8: 'b',
+                q9: 'b',
+                q10: 'b'
+            };
+
+            let score = 0;
+            const totalQuestions = 10;
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const userAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (userAnswer && userAnswer.value === answers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            document.getElementById('result').innerText = `Skor Anda: ${score} dari ${totalQuestions}`;
+        }
+    </script>
+
+</body>
+</html>
